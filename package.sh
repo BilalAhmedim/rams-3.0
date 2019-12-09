@@ -6,6 +6,10 @@ npm init
 echo "install Gulp Globaly..."
 npm install gulp-cli --g
 
+# install gulp locally
+echo "install gulp locally"
+npm install gulp --save-dev
+
 # install postcss and it's modules
 echo "install postcss and modules..."
 npm install gulp-postcss postcss-import postcss-mixins postcss-simple-vars postcss-hexrgba postcss-nested --save-dev
