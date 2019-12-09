@@ -45,9 +45,3 @@ npm install gulp-plumber@latest --save-dev
 # install nano, rename sourcemaps
 echo "install gulp-rename gulp-nano gulp-sourcemaps"
 npm install gulp-rename gulp-nano gulp-sourcemaps --save-dev
-
-# create directory
-echo "creating directory"
-touch App/css/style.css
-touch App/js/coustom.js
-touch App/index.html
