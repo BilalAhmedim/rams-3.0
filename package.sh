@@ -22,10 +22,6 @@ npm install gulp-postcss postcss-import postcss-mixins postcss-simple-vars postc
 echo "install normalize.css..."
 npm install normalize.css --save
 
-#install bootstrap
-echo "installing bootstrap..."
-npm install bootstrap --save
-
 # install auto prefixer
 echo "installing autoprefixer"
 npm install autoprefixer@latest --save-dev

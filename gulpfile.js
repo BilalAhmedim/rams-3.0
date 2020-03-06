@@ -21,7 +21,7 @@ gulp.task('watch', function(){
     },
     notify: false
   });
-  watch('./App/css/**/**.pcss',gulp.series('compiled-stream'));
+  watch('./App/css/**/**.css',gulp.series('compiled-stream'));
   watch('./App/**.html', function(){
     sync.reload()
   });
@@ -31,7 +31,7 @@ gulp.task('watch', function(){
 });
 
 gulp.task('compile', function(){
-  return gulp.src('./App/css/styles.pcss')
+  return gulp.src('./App/css/styles.css')
   .pipe(maps.init())
   .pipe(postcss([importcss, mixins, nested, vars, hexrgba, prefix]))
   .pipe(plumber())
