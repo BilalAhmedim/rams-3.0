@@ -1,4 +1,5 @@
 @import 'normalize.css';
+@import '/_modules/_nav.css';
 *{
   box-sizing: border-box;
 }
