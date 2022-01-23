@@ -1,13 +1,17 @@
 {
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "cssnano": "^5.0.15",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
-    "postcss-preset-env": "^7.2.3"
+    "postcss-mixins": "^9.0.1",
+    "postcss-nested": "^5.0.6",
+    "postcss-preset-env": "^7.2.3",
+    "postcss-simple-vars": "^6.0.3"
   },
   "scripts": {
-    "postcss:watch": "postcss App/css/styles.css -d public"
+    "postcss:watch": "postcss App/css/styles.css -d App --watch"
   },
   "name": "rams-3.0",
   "version": "3.0.0",
