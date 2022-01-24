@@ -5,6 +5,7 @@ module.exports = {
     require("postcss-mixins"),
     require("postcss-simple-vars"),
     require("postcss-preset-env"),
-    require("cssnano"),
+    require("autoprefixer"),
+    // require("cssnano"),
   ],
 };
