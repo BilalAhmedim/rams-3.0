@@ -349,10 +349,18 @@ template {
   display: none;
 }
 
+/* Font Family */
+
+/* Fonts Colors */
+
+/* Backgound Colors */
+
+/* Font Size */
+
 body{
   background: #fff;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
