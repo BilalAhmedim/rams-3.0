@@ -1,3 +1,20 @@
-body{
-  background: #fff;
+header {
+  display: block;
+  padding: 0 80px;
+}
+
+.logo {
+  height: 54px;
+  overflow: hidden;
+  a {
+    display: block;
+    text-decoration: none;
+    color: $primary-fg;
+    font-weight: 500;
+  }
+  img {
+    width: 54px;
+    height: 54px;
+    background-size: cover;
+  }
 }

@@ -1,7 +1,7 @@
 module.exports = (ctx) => ({
   map: ctx.options.map,
   plugins: [
-    require("sourcemap"),
+    // require("sourcemap"),
     require("postcss-import"),
     require("postcss-nested"),
     require("postcss-mixins"),
