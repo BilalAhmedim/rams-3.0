@@ -2,6 +2,7 @@
 @import "/_modules/_variables.css";
 @import "/_modules/_typography.css";
 @import "/_modules/_nav.css";
+@import "/_modules/_headings.css";
 * {
   box-sizing: border-box;
 }

@@ -1,0 +1,11 @@
+.heading-section {
+  background: $heading-bg;
+  font-family: $ff;
+  &.center {
+    text-align: center;
+  }
+  h1 {
+    font-size: $h1-size;
+    color: $primary-fg;
+  }
+}
