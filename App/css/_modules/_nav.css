@@ -4,17 +4,39 @@ header {
 }
 
 .logo {
+  display: inline-block;
   height: 54px;
+  width: 142px;
   overflow: hidden;
   a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: $primary-fg;
     font-weight: 500;
+    position: relative;
+    span {
+      position: absolute;
+      left: 60px;
+      &.rams {
+        top: 12px;
+      }
+      &.international {
+        bottom: 12px;
+      }
+    }
   }
   img {
     width: 54px;
     height: 54px;
     background-size: cover;
+  }
+}
+
+nav.primary-nav {
+  float: right;
+  ul {
+    li {
+      display: inline-block;
+    }
   }
 }
