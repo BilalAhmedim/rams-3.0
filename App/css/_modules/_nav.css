@@ -1,15 +1,21 @@
-header {
+header.navigation {
   display: block;
-  padding: 0 80px;
+  padding: 5px 30px;
+  position: relative;
+  @mixin atLarge {
+    padding: 0 80px;
+  }
 }
 
 .logo {
-  display: inline-block;
   height: 54px;
-  width: 142px;
+  width: 157px;
   overflow: hidden;
-  a {
+  @mixin atLarge {
     display: inline-block;
+  }
+  a {
+    display: block;
     text-decoration: none;
     color: $primary-fg;
     font-weight: 500;
@@ -33,10 +39,57 @@ header {
 }
 
 nav.primary-nav {
-  float: right;
+  margin-left: 50px;
+  @mixin atLarge {
+    float: right;
+  }
   ul {
+    list-style: none;
     li {
-      display: inline-block;
+      display: block;
+      padding: 2px 0;
+      a {
+        display: block;
+        text-decoration: none;
+        font-weight: 500;
+        color: $secondry-fg;
+        padding: 5px 20px;
+        &.active {
+          font-weight: 700;
+          &:after {
+            content: "";
+            width: 46px;
+            height: 2px;
+            background: $secondry-fg;
+          }
+          @mixin clearfix;
+        }
+      }
+      @mixin atLarge {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.hamburger {
+  top: 1px;
+  right: 25px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  padding: 6px;
+  border: 2px solid $primary-bg;
+  margin: 5px 0;
+  transform: scale(0.8);
+  .hamburger-bar {
+    width: 100%;
+    height: 2px;
+    margin: 9px 0;
+    display: block;
+    background: $primary-bg;
+    &:first-child {
+      margin: 4px 0;
     }
   }
 }

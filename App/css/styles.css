@@ -1,5 +1,6 @@
 @import "normalize.css";
-@import "/_modules/_variables.css";
+@import "/_modules/_partials/_mixins.css";
+@import "/_modules/_partials/_variables.css";
 @import "/_modules/_typography.css";
 @import "/_modules/_nav.css";
 @import "/_modules/_headings.css";
