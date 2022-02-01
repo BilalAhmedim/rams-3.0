@@ -4,6 +4,7 @@
 @import "/_modules/_typography.css";
 @import "/_modules/_nav.css";
 @import "/_modules/_headings.css";
+@import "/_modules/_hero.css";
 * {
   box-sizing: border-box;
   margin: 0;

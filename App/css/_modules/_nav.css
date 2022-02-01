@@ -45,15 +45,24 @@ nav.primary-nav {
   }
   ul {
     list-style: none;
+    padding-bottom: 10px;
     li {
       display: block;
       padding: 2px 0;
+      border: 1px solid $divider;
+      border-right: 0;
+      border-left: 0;
+      border-bottom: 0;
+      &:last-child {
+        border-bottom: 1px solid $divider;
+      }
       a {
         display: block;
         text-decoration: none;
         font-weight: 500;
         color: $secondry-fg;
         padding: 5px 20px;
+        position: relative;
         &.active {
           font-weight: 700;
           &:after {
@@ -63,6 +72,10 @@ nav.primary-nav {
             background: $secondry-fg;
           }
           @mixin clearfix;
+        }
+        span.dropdown {
+          font-size: 0.75rem;
+          color: $secondry-fg;
         }
       }
       @mixin atLarge {
@@ -88,6 +101,7 @@ nav.primary-nav {
     margin: 9px 0;
     display: block;
     background: $primary-bg;
+    transition: all ease-in-out 300ms;
     &:first-child {
       margin: 4px 0;
     }

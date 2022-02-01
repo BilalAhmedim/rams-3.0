@@ -16,14 +16,20 @@
         </a>
       </div>
 
-      <nav class="primary-nav">
-        <ul>
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">Bathtubs</a></li>
-          <li><a href="#">Sinks</a></li>
-          <li><a href="#">Products</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+      <nav class="primary-nav" aria-expanded="false" aria-controls="menu-list">
+        <ul role="menu">
+          <li><a href="#" class="active" role="presentation">Home</a></li>
+          <li role="menuitem" aria-haspopup="true" aria-hidden="true">
+            <a href="#">Bathtubs <span class="dropdown">&#x25BC;</span></a>
+          </li>
+          <li role="menuitem" aria-haspopup="true" aria-hidden="true">
+            <a href="#">Sinks <span class="dropdown">&#x25BC;</span></a>
+          </li>
+          <li role="menuitem" aria-haspopup="true" aria-hidden="true">
+            <a href="#">Products <span class="dropdown">&#x25BC;</span></a>
+          </li>
+          <li role="menuitem"><a href="#">About Us</a></li>
+          <li role="menuitem"><a href="#">Contact Us</a></li>
         </ul>
       </nav>
 
@@ -34,7 +40,7 @@
       </div>
     </header>
 
-    <section class="Hero">
+    <section class="hero">
       <div class="hero-unit">
         <img src="./assets/hero.JPG" alt="Hero Unit" />
       </div>
