@@ -7,7 +7,8 @@ module.exports = (ctx) => ({
     require("postcss-mixins"),
     require("postcss-simple-vars"),
     require("postcss-preset-env"),
+    require("postcss-discard-comments"),
     require("autoprefixer"),
-    require("cssnano"),
+    // require("cssnano"),
   ],
 });
