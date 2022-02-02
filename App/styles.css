@@ -295,7 +295,7 @@ nav.primary-nav ul li{
 
 nav.primary-nav ul ul{
       margin-left:20px;
-      max-height:1000px;
+      max-height:0;
       overflow:hidden;
       transition:ease all 300ms;
       padding:0;
@@ -306,7 +306,7 @@ nav.primary-nav ul ul li:last-child{
         }
 
 nav.primary-nav ul li.contain-submenu.expand ul{
-    max-height:0;
+    max-height:1000px;
   }
 
 .hamburger{
