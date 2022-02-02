@@ -275,7 +275,7 @@ nav.primary-nav ul li a{
         text-decoration:none;
         font-weight:500;
         color:#565656;
-        padding:5px 20px;
+        padding:5px 20px 7px 20px;
         position:relative;
       }
 
@@ -307,6 +307,14 @@ nav.primary-nav ul li{
         display:inline-block;
   }
   }
+
+nav.primary-nav ul ul{
+      margin-left:20px;
+    }
+
+nav.primary-nav ul ul li:last-child{
+          border-bottom:none;
+        }
 
 .hamburger{
   top:1px;
