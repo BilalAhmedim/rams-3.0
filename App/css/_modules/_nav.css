@@ -11,9 +11,6 @@ header.navigation {
   height: 54px;
   width: 157px;
   overflow: hidden;
-  @mixin atLarge {
-    display: inline-block;
-  }
   a {
     display: block;
     text-decoration: none;
@@ -40,14 +37,10 @@ header.navigation {
 
 nav.primary-nav {
   margin-top: 10px;
-  @mixin atLarge {
-    float: right;
-  }
   ul {
     list-style: none;
     padding-bottom: 10px;
     li {
-      display: block;
       padding: 2px 0;
       border: 1px solid $divider;
       border-right: 0;
@@ -82,14 +75,25 @@ nav.primary-nav {
         display: inline-block;
       }
     }
+    /* toggle logic */
     ul {
       margin-left: 20px;
+      max-height: 1000px;
+      overflow: hidden;
+      transition: ease all 300ms;
+      padding: 0;
       li {
         &:last-child {
-          border-bottom: none;
+          border-bottom: 0;
         }
       }
     }
+  }
+}
+
+nav.primary-nav ul li.contain-submenu.expand {
+  ul {
+    max-height: 0;
   }
 }
 

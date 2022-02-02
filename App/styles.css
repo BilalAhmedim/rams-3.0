@@ -207,13 +207,6 @@ header.navigation{
   overflow:hidden;
 }
 
-@media (min-width: 992px){
-
-.logo{
-    display:inline-block;
-}
-  }
-
 .logo a{
     display:block;
     text-decoration:none;
@@ -245,20 +238,12 @@ nav.primary-nav{
   margin-top:10px;
 }
 
-@media (min-width: 992px){
-
-nav.primary-nav{
-    float:right;
-}
-  }
-
 nav.primary-nav ul{
     list-style:none;
     padding-bottom:10px;
   }
 
 nav.primary-nav ul li{
-      display:block;
       padding:2px 0;
       border:1px solid #cdcdcd;
       border-right:0;
@@ -310,11 +295,19 @@ nav.primary-nav ul li{
 
 nav.primary-nav ul ul{
       margin-left:20px;
+      max-height:1000px;
+      overflow:hidden;
+      transition:ease all 300ms;
+      padding:0;
     }
 
 nav.primary-nav ul ul li:last-child{
-          border-bottom:none;
+          border-bottom:0;
         }
+
+nav.primary-nav ul li.contain-submenu.expand ul{
+    max-height:0;
+  }
 
 .hamburger{
   top:1px;

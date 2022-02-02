@@ -15,7 +15,7 @@
   },
   "scripts": {
     "postcss": "postcss App/**/*.css -d App/ --watch -m --verbose",
-    "browsersync": "browser-sync start --server 'App' --files './App/**/*.html, ./App/**/*.css'",
+    "browsersync": "browser-sync start --server 'App' --files './App/**/*.html, ./App/**/*.css, ./App/**/*.js'",
     "watch": "npm-run-all --parallel postcss browsersync"
   },
   "name": "rams-3.0",
