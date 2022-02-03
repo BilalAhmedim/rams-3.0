@@ -327,7 +327,7 @@ nav.primary-nav ul li.contain-submenu.expand ul{
     margin:9px 0;
     display:block;
     background:#d7b356;
-    transition:all ease-in-out 300ms;
+    transition:all ease-in-out 200ms;
   }
 
 .hamburger .hamburger-bar:first-child{
