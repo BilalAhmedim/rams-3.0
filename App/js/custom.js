@@ -23,10 +23,16 @@ parentmenu.forEach(
 
 // Toggle Navigation
 const toggleNav = (e) => {
+  const nav = document.querySelector(".primary-nav");
   const hamMenu = e.target.closest(".hamburger");
-  hamMenu.classList[1] == "open"
-    ? hamMenu.classList.remove("open")
-    : hamMenu.classList.add("open");
+
+  if (hamMenu.classList[1] == "open") {
+    hamMenu.classList.remove("open");
+    nav.classList.remove("expand-nav");
+  } else {
+    hamMenu.classList.add("open");
+    nav.classList.add("expand-nav");
+  }
   console.log(hamMenu.classList);
 };
 

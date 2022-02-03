@@ -36,7 +36,14 @@ header.navigation {
 }
 
 nav.primary-nav {
-  margin-top: 10px;
+  margin-top: 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: ease all 300ms;
+  &.expand-nav {
+    margin-top: 10px;
+    max-height: 1000px;
+  }
   ul {
     list-style: none;
     padding-bottom: 10px;
@@ -93,7 +100,7 @@ nav.primary-nav {
 
 nav.primary-nav ul li.contain-submenu.expand {
   ul {
-    max-height: 1000px;
+    max-height: 650px;
   }
 }
 
@@ -107,6 +114,10 @@ nav.primary-nav ul li.contain-submenu.expand {
   border: 2px solid $primary-bg;
   margin: 5px 0;
   transform: scale(0.8);
+  cursor: pointer;
+  /* @mixin atLarge {
+    display: none;
+  } */
   .hamburger-bar {
     width: 100%;
     height: 2px;
@@ -118,6 +129,7 @@ nav.primary-nav ul li.contain-submenu.expand {
       margin: 4px 0;
     }
   }
+
   &.open {
     .hamburger-bar:first-child {
       margin-top: 0.75px;

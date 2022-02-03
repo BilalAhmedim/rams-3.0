@@ -235,8 +235,16 @@ header.navigation{
   }
 
 nav.primary-nav{
-  margin-top:10px;
+  margin-top:0px;
+  max-height:0px;
+  overflow:hidden;
+  transition:ease all 300ms;
 }
+
+nav.primary-nav.expand-nav{
+    margin-top:10px;
+    max-height:1000px;
+  }
 
 nav.primary-nav ul{
     list-style:none;
@@ -306,7 +314,7 @@ nav.primary-nav ul ul li:last-child{
         }
 
 nav.primary-nav ul li.contain-submenu.expand ul{
-    max-height:1000px;
+    max-height:650px;
   }
 
 .hamburger{
@@ -319,6 +327,7 @@ nav.primary-nav ul li.contain-submenu.expand ul{
   border:2px solid #d7b356;
   margin:5px 0;
   transform:scale(0.8);
+  cursor:pointer;
 }
 
 .hamburger .hamburger-bar{
