@@ -37,13 +37,18 @@ parentmenu.forEach(
 
 // Toggle Navigation
 const toggleNav = (e) => {
+  state = nav.getAttribute("aria-expanded");
   if (hamMenu.classList[1] == "open") {
     hamMenu.classList.remove("open");
     nav.classList.remove("expand-nav");
+    state = "false";
   } else {
     hamMenu.classList.add("open");
-    nav.classList.add("expand-nav");
+    nav.classList.add("expand-nav", "true");
+    state = "true";
   }
+  nav.setAttribute("aria-expanded", state);
+  console.log(nav);
 };
 
 ham.addEventListener("click", toggleNav);
