@@ -46,7 +46,6 @@ const toggleNav = (e) => {
     state = "true";
   }
   nav.setAttribute("aria-expanded", state);
-  console.log(nav);
 };
 
 ham.addEventListener("click", toggleNav);

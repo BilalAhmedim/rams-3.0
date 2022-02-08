@@ -1,11 +1,26 @@
 .heading-section {
   background: $heading-bg;
   font-family: $ff;
+  height: 60px;
+  padding: 8px 0;
+  border-bottom: 1px solid $primary-bg;
+  @mixin atLarge {
+    height: 94px;
+  }
   &.center {
     text-align: center;
+    @mixin atLarge {
+      text-align: left;
+    }
   }
   h1 {
     font-size: $h1-size;
     color: $primary-fg;
+    margin: 0;
+    padding: 0;
   }
+}
+
+.content {
+  text-align: center;
 }
