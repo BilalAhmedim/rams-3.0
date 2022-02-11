@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+article,
+section {
+  padding-bottom: 40px;
+  @mixin atLarge {
+    padding-bottom: 77px;
+  }
+}

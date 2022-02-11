@@ -1,12 +1,9 @@
 @import "normalize.css";
 @import "/_modules/_partials/_mixins.css";
 @import "/_modules/_partials/_variables.css";
+@import "/_modules/_partials/_global.css";
 @import "/_modules/_typography.css";
 @import "/_modules/_nav.css";
 @import "/_modules/_headings.css";
 @import "/_modules/_hero.css";
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "/_modules/_gallery.css";

@@ -1,0 +1,11 @@
+.card {
+  border: 1px solid $primary-bg;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);
+  overflow: hidden;
+}
+figure {
+  img {
+    width: 100%;
+    background-size: cover;
+  }
+}
