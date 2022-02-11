@@ -1,11 +1,35 @@
+.content {
+  @mixin clearfix;
+}
 .card {
+  width: calc(50% - 15px);
   border: 1px solid $primary-bg;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);
   overflow: hidden;
+  margin: 10px 0px 0px 10px;
+  float: left;
+  @mixin atLarge {
+    width: calc(25% - 25px);
+    margin: 20px 0px 0px 20px;
+  }
 }
 figure {
   img {
     width: 100%;
     background-size: cover;
+  }
+  .card__caption {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    p {
+      text-align: left;
+      margin: 5px;
+      padding: 0;
+      font-weight: 400;
+      font-size: calc($card-caption / 1.4);
+      @mixin atLarge {
+        font-size: calc($card-caption / 1.2);
+      }
+    }
   }
 }

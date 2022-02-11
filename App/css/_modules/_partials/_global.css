@@ -10,3 +10,21 @@ section {
     padding-bottom: 77px;
   }
 }
+
+.btn {
+  width: 90%;
+  font-family: $ff;
+  font-size: 16px;
+  background: $primary-bg;
+  margin: 5px 0 0 0;
+  border: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  a {
+    padding: 8px 8px 9px 8px;
+    display: block;
+    color: #fff;
+  }
+  @mixin atLarge {
+    font-size: 1rem;
+  }
+}
