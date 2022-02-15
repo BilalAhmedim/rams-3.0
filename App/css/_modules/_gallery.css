@@ -4,10 +4,14 @@
 .card {
   width: calc(50% - 15px);
   border: 1px solid $primary-bg;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 10px 0px 0px 10px;
   float: left;
+  transition: ease 300ms box-shadow;
+  &:hover {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  }
   @mixin atLarge {
     width: calc(25% - 25px);
     margin: 20px 0px 0px 20px;
@@ -19,11 +23,13 @@ figure {
     background-size: cover;
   }
   .card__caption {
+    width: 90%;
+    margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 30px;
     p {
       text-align: left;
-      margin: 5px;
+      margin: 5px 0 5px 0;
       padding: 0;
       font-weight: 400;
       font-size: calc($card-caption / 1.4);

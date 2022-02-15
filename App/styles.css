@@ -201,19 +201,34 @@ section{
   }
 
 .btn{
-  width:90%;
+  width:100%;
   font-family:selawik;
   font-size:16px;
-  background:#d7b356;
+  background:rgba(215,179,86, 0.7);
+  border:1px solid rgba(215,179,86, 0.7);
   margin:5px 0 0 0;
-  border:none;
-  box-shadow:5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow:0px 3px 6px 0 rgba(0, 0, 0, 0.2);
+  transition:ease 300ms box-shadow, ease 300ms background;
 }
+
+.btn:hover{
+    box-shadow:0px 3px 10px 0 rgba(0, 0, 0, 0.3);
+    background:#d7b356;
+  }
 
 .btn a{
     padding:8px 8px 9px 8px;
     display:block;
-    color:#fff;
+    color:#565656;
+    font-weight:400;
+    transition:ease 300ms color;
+  }
+
+@media (min-width: 992px){
+
+.btn a{
+      font-weight:500
+  }
   }
 
 @media (min-width: 992px){
@@ -497,18 +512,23 @@ section.hero .hero-unit img{
 .card{
   width:calc(50% - 15px);
   border:1px solid #d7b356;
-  box-shadow:5px 5px 15px rgba(0, 0, 0, 0.16);
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
   overflow:hidden;
   margin:10px 0px 0px 10px;
   float:left;
+  transition:ease 300ms box-shadow;
 }
+
+.card:hover{
+    box-shadow:0 4px 16px 0 rgba(0, 0, 0, 0.3);
+  }
 
 @media (min-width: 992px){
 
 .card{
     width:calc(25% - 25px);
-    margin:20px 0px 0px 20px
-}
+    margin:20px 0px 0px 20px;
+  }
   }
 
 figure img{
@@ -517,13 +537,15 @@ figure img{
   }
 
 figure .card__caption{
+    width:90%;
+    margin:0 auto;
     padding-top:10px;
     padding-bottom:30px;
   }
 
 figure .card__caption p{
       text-align:left;
-      margin:5px;
+      margin:5px 0 5px 0;
       padding:0;
       font-weight:400;
       font-size:calc(1.125rem / 1.4);

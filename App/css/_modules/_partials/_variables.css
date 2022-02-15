@@ -8,6 +8,7 @@ $secondry-fg: #565656;
 $primary-bg: #d7b356;
 $heading-bg: #fbfbfb;
 $divider: #cdcdcd;
+$button-bg: rgba(#d7b356, 0.7);
 
 /* Font Size */
 $nav-fs: 1.25rem;
