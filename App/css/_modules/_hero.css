@@ -1,4 +1,5 @@
 section.hero {
+  padding-bottom: 0 !important;
   .hero-unit {
     display: block;
     overflow: hidden;

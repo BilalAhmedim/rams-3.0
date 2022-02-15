@@ -7,6 +7,7 @@
   margin-bottom: 40px;
   @mixin atLarge {
     height: 94px;
+    padding: 25px 0 25px 80px;
     margin-bottom: 77px;
   }
   &.center {
@@ -16,7 +17,7 @@
     }
   }
   h1 {
-    font-size: calc(&h1-size / 0.75rem);
+    font-size: calc($h1-size / 0.75rem);
     color: $primary-fg;
     margin: 0;
     padding: 0;
@@ -28,4 +29,7 @@
 
 .content {
   text-align: center;
+}
+.about .heading-section {
+  margin-bottom: 0;
 }

@@ -459,6 +459,7 @@ nav.primary-nav ul li.contain-submenu.expand ul{
 
 .heading-section{
     height:94px;
+    padding:25px 0 25px 80px;
     margin-bottom:77px;
 }
   }
@@ -475,7 +476,7 @@ nav.primary-nav ul li.contain-submenu.expand ul{
   }
 
 .heading-section h1{
-    font-size:calc(&h1-size / 0.75rem);
+    font-size:calc(2.375rem / 0.75rem);
     color:#d7b356;
     margin:0;
     padding:0;
@@ -490,6 +491,14 @@ nav.primary-nav ul li.contain-submenu.expand ul{
 
 .content{
   text-align:center;
+}
+
+.about .heading-section{
+  margin-bottom:0;
+}
+
+section.hero{
+  padding-bottom:0 !important;
 }
 
 section.hero .hero-unit{
