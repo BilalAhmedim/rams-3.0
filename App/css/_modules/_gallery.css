@@ -9,6 +9,7 @@
   margin: 10px 0px 0px 10px;
   float: left;
   transition: ease 300ms box-shadow;
+  cursor: pointer;
   &:hover {
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3);
   }

@@ -12,6 +12,7 @@ header.navigation {
   height: 54px;
   width: 157px;
   overflow: hidden;
+  display: inline-block;
   a {
     display: block;
     text-decoration: none;
@@ -60,17 +61,22 @@ nav.primary-nav {
       a {
         display: block;
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 400;
         color: $secondry-fg;
         padding: 5px 20px 7px 20px;
         position: relative;
         &.active {
+          text-align: center;
           font-weight: 700;
+          position: relative;
           &:after {
+            position: absolute;
+            right: 6.5px;
+            bottom: 0;
             content: "";
-            width: 46px;
+            width: 66px;
             height: 2px;
-            background: $secondry-fg;
+            background: $primary-fg;
           }
           @mixin clearfix;
         }
@@ -93,6 +99,36 @@ nav.primary-nav {
       li {
         &:last-child {
           border-bottom: 0;
+        }
+      }
+    }
+  }
+  @mixin atCommon {
+    /* padding: 10.5px 0 10.5px 0; */
+    overflow: visible;
+    float: right;
+    max-height: 54px;
+    ul {
+      float: right;
+      li {
+        border: none;
+        &:last-child {
+          border: none;
+        }
+        a {
+          padding: 15.5px 17px 15.5px 17px;
+        }
+        ul {
+          background: #fff;
+          margin: 20px 0 0 0;
+          padding: 0 15px 15px 15px;
+          li {
+            display: block;
+            a {
+              margin: 0;
+              padding: 0;
+            }
+          }
         }
       }
     }
@@ -148,6 +184,9 @@ nav.primary-nav ul li.contain-submenu.expand {
       transform-origin: 0% 50%;
       transform: rotate(-45deg) scalex(1.3);
     }
+  }
+  @mixin atCommon {
+    display: none;
   }
 }
 
