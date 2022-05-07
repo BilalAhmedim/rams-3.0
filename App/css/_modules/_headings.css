@@ -3,7 +3,7 @@
   font-family: $ff;
   height: 60px;
   padding: 8px 0;
-  border-bottom: 1px solid $primary-bg;
+  border-top: 1px solid $primary-bg;
   margin-bottom: 40px;
   @mixin atLarge {
     height: 94px;

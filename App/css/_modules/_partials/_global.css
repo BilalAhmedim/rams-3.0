@@ -34,6 +34,10 @@ section {
       font-weight: 500;
     }
   }
+  &.btn-about-us {
+    width: auto;
+    padding: 8px 8px 9px 8px;
+  }
   @mixin atLarge {
     font-size: 1rem;
   }

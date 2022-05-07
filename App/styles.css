@@ -231,6 +231,11 @@ section{
   }
   }
 
+.btn.btn-about-us{
+    width:auto;
+    padding:8px 8px 9px 8px;
+  }
+
 @media (min-width: 992px){
 
 .btn{
@@ -497,7 +502,7 @@ nav.primary-nav ul li.contain-submenu.expand ul{
   font-family:selawik;
   height:60px;
   padding:8px 0;
-  border-bottom:1px solid #d7b356;
+  border-top:1px solid #d7b356;
   margin-bottom:40px;
 }
 
