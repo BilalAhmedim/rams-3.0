@@ -11,3 +11,34 @@ p {
     padding: 60px 80px;
   }
 }
+.about-text {
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.col-2 {
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+  text-align: center;
+  @mixin atMedium {
+    width: 50%;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
+address {
+  width: 260px;
+  margin: 40px auto;
+  font-family: $ff;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: $secondry-fg;
+  letter-spacing: 0.4px;
+  font-style: normal;
+  text-align: left;
+  a {
+    /* text-decoration: none; */
+    color: $secondry-fg;
+  }
+}
