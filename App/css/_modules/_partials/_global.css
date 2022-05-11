@@ -42,3 +42,23 @@ section {
     font-size: 1rem;
   }
 }
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 65%;
+  position: relative;
+  height: 0;
+  @mixin atMedium {
+    padding-bottom: 100%;
+  }
+  @mixin atMedium {
+    padding-bottom: 65%;
+  }
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
