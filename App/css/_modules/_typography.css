@@ -27,6 +27,17 @@ p {
     padding: 0;
   }
 }
+.col-4 {
+  width: 50%;
+  margin: 0 0 0 0;
+  padding: 0;
+  @mixin atMedium {
+    width: 25%;
+    float: left;
+    margin: 0;
+    padding: 0;
+  }
+}
 address {
   width: 260px;
   margin: 40px auto;

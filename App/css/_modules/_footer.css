@@ -1,0 +1,59 @@
+footer {
+  height: 400px;
+  background: $primary-fg;
+  padding: 70px 0;
+  .map-footer {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+  }
+  address {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      font-size: $footer-f;
+      color: $footer-c;
+      margin-bottom: 15px;
+      font-weight: 500;
+      a {
+        color: $footer-c;
+      }
+    }
+  }
+  .icon {
+    position: absolute;
+    left: -20px;
+    display: inline-block;
+    width: 16px;
+    background: $footer-icon;
+    &.mark {
+      mask: url("/assets/location.svg") no-repeat;
+    }
+    &.mail {
+      mask: url("/assets/email.svg") no-repeat;
+    }
+    &.tel {
+      mask: url("/assets/phone.svg") no-repeat;
+    }
+    &.time {
+      mask: url("/assets/email.svg") no-repeat;
+    }
+  }
+}
+ul.footer {
+  display: block;
+  list-style: none;
+  li {
+    font-size: $footer-f;
+    color: $footer-c;
+    margin-bottom: 15px;
+    font-weight: 500;
+    a {
+      color: $footer-c;
+    }
+  }
+}

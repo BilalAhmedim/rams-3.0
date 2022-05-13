@@ -47,3 +47,12 @@
 .about .heading-section {
   margin-bottom: 0;
 }
+
+.footer-heading-section {
+  margin-bottom: 35px;
+  h3 {
+    font-size: $footer-h3;
+    font-weight: bold;
+    color: $secondry-fg;
+  }
+}
