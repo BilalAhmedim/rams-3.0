@@ -1,0 +1,33 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  @mixin atMedium {
+    max-width: 720px;
+  }
+  @mixin atLarge {
+    max-width: 960px;
+  }
+  @mixin atCommon {
+    max-width: 1140px;
+  }
+  @mixin atHdp {
+    max-width: 1320px;
+  }
+}
+
+.heading-container {
+  width: 100%;
+  margin: 0 auto;
+  @mixin atMedium {
+    max-width: calc(246px + 720px);
+  }
+  @mixin atLarge {
+    max-width: calc(246px + 960px);
+  }
+  @mixin atCommon {
+    max-width: calc(246px + 1140px);
+  }
+  @mixin atHdp {
+    max-width: calc(246px + 1320px);
+  }
+}

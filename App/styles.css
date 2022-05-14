@@ -731,7 +731,7 @@ figure .card__caption p{
   }
 
 footer{
-  height:400px;
+  min-height:400px;
   background:#d7b356;
   padding:70px 0;
 }
@@ -805,5 +805,71 @@ ul.footer li{
 ul.footer li a{
       color:#242424;
     }
+
+.container{
+  max-width:100%;
+  margin:0 auto;
+}
+
+@media (min-width: 768px){
+
+.container{
+    max-width:720px
+}
+  }
+
+@media (min-width: 992px){
+
+.container{
+    max-width:960px
+}
+  }
+
+@media (min-width: 1200px){
+
+.container{
+    max-width:1140px
+}
+  }
+
+@media (min-width: 1320px){
+
+.container{
+    max-width:1320px
+}
+  }
+
+.heading-container{
+  width:100%;
+  margin:0 auto;
+}
+
+@media (min-width: 768px){
+
+.heading-container{
+    max-width:calc(246px + 720px)
+}
+  }
+
+@media (min-width: 992px){
+
+.heading-container{
+    max-width:calc(246px + 960px)
+}
+  }
+
+@media (min-width: 1200px){
+
+.heading-container{
+    max-width:calc(246px + 1140px)
+}
+  }
+
+@media (min-width: 1320px){
+
+.heading-container{
+    max-width:calc(246px + 1320px)
+}
+  }
 
 /*# sourceMappingURL=styles.css.map */

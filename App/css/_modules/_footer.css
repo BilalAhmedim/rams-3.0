@@ -1,5 +1,5 @@
 footer {
-  height: 400px;
+  min-height: 400px;
   background: $primary-fg;
   padding: 70px 0;
   .map-footer {
